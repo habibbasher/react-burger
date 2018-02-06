@@ -1,0 +1,49 @@
+{
+  // install the following packages: To run eslint:: npm run lint
+  // npm install --save-dev babel-eslint eslint prettier eslint-config-airbnb@^15.0.1 eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y@^5.1.1
+
+//  For react when webpack config is extracted and configured using npm run eject then only this packages are needed in devDe...
+//  "devDependencies": {
+//    "eslint-config-airbnb": "^15.1.0",
+//    "eslint-config-prettier": "^2.9.0",
+//    "eslint-plugin-prettier": "^2.5.0",
+//    "prettier": "^1.10.2"
+//  }
+
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": [1, { "allow": ["_id"] }],
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    "import/prefer-default-export": "off",
+    "func-names": "off",
+    "no-else-return": "off",
+    "no-useless-escape": "off",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "import/extensions": "off",
+    "react/prop-types": "off",
+    "arrow-body-style": "off",
+    "object-shorthand": "off",
+    "react/no-unescaped-entities": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "strict": "off"
+  }
+}
