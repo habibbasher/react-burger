@@ -44,6 +44,9 @@
     "no-use-before-define": "off",
     "no-param-reassign": "off",
     "global-require": "off",
-    "strict": "off"
+    "strict": "off",
+    "react/self-closing-comp": "off",
+    "no-console": "off",
+    "react/no-array-index-key": "off"
   }
 }
