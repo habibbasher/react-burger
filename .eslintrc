@@ -47,6 +47,8 @@
     "strict": "off",
     "react/self-closing-comp": "off",
     "no-console": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "guard-for-in": "off",
+    "prefer-const": "off"
   }
 }
