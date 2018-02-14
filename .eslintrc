@@ -1,16 +1,16 @@
 {
-  // install the following packages: To run eslint:: npm run lint
-  // npm install --save-dev babel-eslint eslint prettier eslint-config-airbnb@^15.0.1 eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y@^5.1.1
+  # install the following packages: To run eslint:: npm run lint
+  # npm install --save-dev babel-eslint eslint prettier eslint-config-airbnb@^15.0.1 eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y@^5.1.1
 
-//  For react when webpack config is extracted and configured using npm run eject then only this packages are needed in devDe...
-//  "devDependencies": {
-//    "eslint-config-airbnb": "^15.1.0",
-//    "eslint-config-prettier": "^2.9.0",
-//    "eslint-plugin-prettier": "^2.5.0",
-//    "prettier": "^1.10.2"
-//  }
+  # For react when webpack config is extracted and configured using npm run eject then only this packages are needed in devDe...
+  # "devDependencies": {
+  #   "eslint-config-airbnb": "^15.1.0",
+  #   "eslint-config-prettier": "^2.9.0",
+  #   "eslint-plugin-prettier": "^2.5.0",
+  #   "prettier": "^1.10.2"
+  # }
 
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "extends": ["airbnb", "prettier", "prettier/react", "prettier/flowtype", "prettier/standard"],
   "plugins": ["prettier"],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -29,6 +29,8 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-underscore-dangle": [1, { "allow": ["_id"] }],
     "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    # First know what prettier does and then try to implement otherwise do not implement it.
+    # "prettier/prettier": "error",
     "import/prefer-default-export": "off",
     "func-names": "off",
     "no-else-return": "off",
